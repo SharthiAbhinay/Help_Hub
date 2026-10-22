@@ -9,7 +9,7 @@
 # server you send to (on Vercel, enter it there without quotes).
 
 $BaseUrl     = "https://help-hub-xtqe.vercel.app"   # or http://localhost:3000
-$EmailSecret = "helphub-email-demo-2026"
+$EmailSecret = $env:INBOUND_EMAIL_SECRET
 $Org         = "cascade-health-demo"
 $AdminEmail  = "admin@cascadehealth.example"
 $Password    = "Password123"
