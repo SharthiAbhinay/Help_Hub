@@ -89,6 +89,7 @@ Our project presentation: [view on Google Slides](https://docs.google.com/presen
 ├── images/
 │   └── helphub-dashboard.svg  # Scrolling demo shown in this README
 ├── design.pdf                 # Personas, user stories and mockups
+├── demo-requests.ps1          # Sends a demo ticket by API or email
 ├── eslint.config.js           # Class ESLint config
 ├── package.json               # Dependencies and npm scripts
 ├── package-lock.json          # Exact installed versions
@@ -159,6 +160,9 @@ Then open http://localhost:3000.
 npm run lint
 npm run format
 ```
+
+### 6. Try the API and email channels
+`demo-requests.ps1` sends one ticket through the API and one by email so you can see both channels
 
 ## GenAI Usage
 
