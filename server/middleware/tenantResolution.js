@@ -6,6 +6,9 @@
 // It is never read from the URL, query string or body, so one company can
 // never ask for another company's data by changing an id.
 
+// reviewer note: I really liked this design. taking the company only from this session or API key means a user can't see other company's 
+// tickets by changing an id in the URL. Much safer app
+
 /** The one place the session is read. Sets req.user, req.tenantId and req.source. */
 function tenantResolution(req, res, next) {
   const s = req.session;
